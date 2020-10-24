@@ -1,18 +1,18 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
+permalink: /about
 ---
+# About the Comic
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Nulla scelerisque massa erat, ac fermentum tellus luctus a. Quisque turpis massa, scelerisque non mauris ac, mattis vehicula magna. Nunc viverra diam quis est dictum consequat. Quisque non sapien lectus. Integer a ligula ac velit euismod lobortis. Nullam commodo orci a magna varius, sed laoreet nulla auctor.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Curabitur auctor nulla eros, et placerat sapien auctor eget. Duis sed enim est. Vivamus sapien lectus, venenatis nec sapien eget, pharetra consectetur lorem. Nunc nec purus suscipit, suscipit diam non, malesuada lorem.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+{% include socialmedia.html %}
 
+# About the Author
 
-[jekyll-organization]: https://github.com/jekyll
+Curabitur auctor nulla eros, et placerat sapien auctor eget. Duis sed enim est. Vivamus sapien lectus, venenatis nec sapien eget, pharetra consectetur lorem. Nunc nec purus suscipit, suscipit diam non, malesuada lorem.
+
+{% include authorsocialmedia.html %}

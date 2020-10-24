@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jekyll Netlify CMS
+tab_title: Your Comic! #This text shows up on the browser tab
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the basic Jekyll starter site, with Netlify CMS integrated and using
@@ -39,8 +40,14 @@ minima:
 
 # social links
 twitter_username: jekyllrb
-github_username:  jekyll
 rss: rss
+tumblr_username: http://peahat.tumblr.com
+patreon_username: peahat
+
+# Author Social Media
+author_twitter_username:
+author_tumblr_username:
+author_patreon_username:
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
