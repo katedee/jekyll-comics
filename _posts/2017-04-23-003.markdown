@@ -4,5 +4,7 @@ title:  "3"
 date:   2017-04-23 11:42:56 -0700
 categories: page
 permalink: /003
+comic: /pages/003.png
+comicalt: page three
 ---
-![PAGE THREE]({{ site.url }}/pages/003.png)
+Making a little blog area down here

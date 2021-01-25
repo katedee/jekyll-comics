@@ -4,5 +4,7 @@ title:  "2"
 date:   2017-04-23 11:42:56 -0700
 categories: page
 permalink: /002
+comic: /pages/002.png
+comicalt: page two
 ---
-![PAGE TWO]({{ site.url }}/pages/002.png)
+Making a little blog area down here

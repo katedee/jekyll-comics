@@ -4,5 +4,7 @@ date:   2017-04-23 11:42:56 -0700
 title: 1
 categories: page
 permalink: /001
+comic: /pages/001.png
+comicalt: page one
 ---
-![PAGE ONE]({{ site.url }}/pages/001.png)
+Making a little blog area down here
