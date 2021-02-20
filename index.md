@@ -14,11 +14,8 @@ permalink: /index.html
             {% assign comicPosts = site.posts | reverse %}
             {% assign lastComicPost = comicPosts | last %}
             <li><a class="grad-button" href="{{ site.url }}{{ comicPosts[0].url }}" >First</a></li>
-            {% if page.previous.url %}
-            <li><a class="grad-button" href="{{ site.url }}{{ page.previous.url }}" >Previous</a></li>
-            {% endif %}
-            {% if page.next.url %}
-            <li><a class="grad-button" href="{{ site.url }}{{ page.next.url }}" >Next</a></li>
+            {% if post.previous.url %}
+            <li><a class="grad-button" href="{{ site.url }}{{ post.previous.url }}" >Previous</a></li>
             {% endif %}
             <li><a class="grad-button" href="{{ site.url }}{{ lastComicPost.url }}">Last</a></li>
         </ul>
