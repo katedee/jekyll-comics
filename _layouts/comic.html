@@ -42,10 +42,20 @@
 
             <div class="comic-panel center">
               <a name="top-page"></a>
-              <a href= {{ site.url }}{{ page.next.url }}#top-page><img src="{{ site.url }}{{ page.comic }}" alt="{{page.comicalt}}"></a>
+              <a href= {{ site.url }}{{ page.next.url }}><img src="{{ site.url }}{{ page.comic }}" alt="{{page.comicalt}}"></a>
               <ul class="pager">
-                <li><a class="btn btn-outline-secondary" href= {{ site.url }}{{ page.previous.url }}#top-page >PREVIOUS</a></li>
-                <li><a class="btn btn-outline-primary" href= {{ site.url }}{{ page.next.url }}#top-page >NEXT</a></li>
+                {% assign comicPosts = site.posts | reverse %}
+                {% assign lastComicPost = comicPosts | last %}
+                
+                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ comicPosts[0].url }}" >FIRST</a></li>
+                {% if page.previous.url %}
+                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ page.previous.url }}" >PREVIOUS</a></li>
+                {% endif %}
+                {% if page.next.url %}
+                <li><a class="btn btn-outline-primary" href="{{ site.url }}{{ page.next.url }}" >NEXT</a></li>
+                {% endif %}
+                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ lastComicPost.url }}">LAST</a></li>
+
               </ul>
             </div><!--comic div-->
             <div class="comic-blog center">
