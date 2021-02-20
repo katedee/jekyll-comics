@@ -2,14 +2,16 @@
 ---
 /*CSS for comic site*/
 
+$blue: #1701AC;
+$dark-salmon: #BE5427;
+
 body {
   font-family: 'Droid Sans', sans-serif;
   font-size: 15px;
-  color: #424142;
+  color: #3a393a;
   padding-top: 20px;
-  background-image: url({{ site.url }}/images/grid.png);
-  background-color: gray;
-  // background: red;
+  background: conic-gradient(from 180deg at 20% 50%, $blue, $dark-salmon);
+  background-repeat: no-repeat;
 }
 
 .panel {
@@ -140,4 +142,34 @@ body {
 .comic-panel {
   max-width: 700px;
   margin-left: auto;
+}
+
+.grad-button {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, $blue, $dark-salmon);
+}
+
+.comic-nav {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  li > a, li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    color: #fff;
+  }
 }

@@ -43,18 +43,18 @@
             <div class="comic-panel center">
               <a name="top-page"></a>
               <a href= {{ site.url }}{{ page.next.url }}><img src="{{ site.url }}{{ page.comic }}" alt="{{page.comicalt}}"></a>
-              <ul class="pager">
+              <ul class="comic-nav">
                 {% assign comicPosts = site.posts | reverse %}
                 {% assign lastComicPost = comicPosts | last %}
                 
-                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ comicPosts[0].url }}" >FIRST</a></li>
+                <li><a class="grad-button" href="{{ site.url }}{{ comicPosts[0].url }}" >First</a></li>
                 {% if page.previous.url %}
-                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ page.previous.url }}" >PREVIOUS</a></li>
+                <li><a class="grad-button" href="{{ site.url }}{{ page.previous.url }}" >Previous</a></li>
                 {% endif %}
                 {% if page.next.url %}
-                <li><a class="btn btn-outline-primary" href="{{ site.url }}{{ page.next.url }}" >NEXT</a></li>
+                <li><a class="grad-button" href="{{ site.url }}{{ page.next.url }}" >Next</a></li>
                 {% endif %}
-                <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ lastComicPost.url }}">LAST</a></li>
+                <li><a class="grad-button" href="{{ site.url }}{{ lastComicPost.url }}">Last</a></li>
 
               </ul>
             </div><!--comic div-->
