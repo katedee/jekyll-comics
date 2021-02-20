@@ -7,9 +7,6 @@ permalink: /index.html
     {% for post in site.posts limit:1 %}
     <div class="comic-panel center">
         <img src="{{ site.url }}{{ post.comic }}" alt="{{post.comicalt}}"/>
-        <ul class="pager">
-            <li><a class="btn btn-outline-secondary" href="{{ site.url }}{{ post.previous.url }}">PREVIOUS</a></li>
-        </ul>
         <ul class="comic-nav">
             {% assign comicPosts = site.posts | reverse %}
             {% assign lastComicPost = comicPosts | last %}
